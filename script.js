@@ -117,3 +117,30 @@ document.getElementById('calPrev').addEventListener('click', () => {
 document.getElementById('calNext').addEventListener('click', () => {
   current.month++;
   if (current.month > 11) { current.month = 0; current.year++; }
+  renderCalendar();
+});
+
+renderCalendar();
+
+// ---- Scroll reveal animation ----
+const revealEls = document.querySelectorAll(
+  '.reality-card, .help-card, .feature-card, .scale-list li, .stat-item'
+);
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }, i * 60);
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+revealEls.forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  revealObserver.observe(el);
+});
