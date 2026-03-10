@@ -465,3 +465,47 @@ img { max-width: 100%; display: block; }
 
 /* ======================================================
    STRUGGLING
+   ====================================================== */
+.struggling {
+  background: #fff;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.struggling-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.struggling-inner .section-title { max-width: 900px; margin-bottom: 16px; }
+.struggling-inner .section-sub { margin-bottom: 36px; }
+
+/* ======================================================
+   WHY CHOOSE
+   ====================================================== */
+.why-choose {
+  background: var(--dark);
+  padding: 90px 0;
+  color: #fff;
+}
+.why-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+/* LEFT */
+.why-left { display: flex; flex-direction: column; gap: 22px; }
+.why-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.why-badge-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+.why-title {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
