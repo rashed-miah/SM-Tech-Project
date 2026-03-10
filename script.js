@@ -46,3 +46,74 @@ tabBtns.forEach(btn => {
   });
 });
 
+// ---- Calendar ----
+const monthNames = [
+  'January','February','March','April','May','June',
+  'July','August','September','October','November','December'
+];
+
+const today = new Date();
+let current = { year: today.getFullYear(), month: today.getMonth() };
+let selectedDate = null;
+
+function renderCalendar() {
+  const { year, month } = current;
+  document.getElementById('calMonth').textContent = `${monthNames[month]} ${year}`;
+
+  const datesEl = document.getElementById('calDates');
+  datesEl.innerHTML = '';
+
+  const firstDay = new Date(year, month, 1).getDay(); // 0=Sun
+  // Monday-first grid: Sun â†’ offset 6, Mon â†’ 0
+  const startOffset = firstDay === 0 ? 6 : firstDay - 1;
+
+  const totalDays = new Date(year, month + 1, 0).getDate();
+  const todayStr  = today.toDateString();
+
+  // Empty slots before first day
+  for (let i = 0; i < startOffset; i++) {
+    const empty = document.createElement('div');
+    empty.className = 'cal-date empty';
+    datesEl.appendChild(empty);
+  }
+
+  // Days
+  for (let d = 1; d <= totalDays; d++) {
+    const cell     = document.createElement('div');
+    const cellDate = new Date(year, month, d);
+    const dayOfWeek = cellDate.getDay(); // 0=Sun, 6=Sat
+    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+    const isPast    = cellDate < new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    const isToday   = cellDate.toDateString() === todayStr;
+    const isSelected = selectedDate && selectedDate.toDateString() === cellDate.toDateString();
+
+    cell.className = 'cal-date';
+    cell.textContent = d;
+
+    if (isPast) {
+      cell.classList.add('past');
+    } else if (isWeekend) {
+      cell.classList.add('weekend');
+    } else {
+      cell.classList.add('available');
+      if (isToday)    cell.classList.add('today');
+      if (isSelected) cell.classList.add('selected');
+      cell.addEventListener('click', () => {
+        selectedDate = cellDate;
+        renderCalendar();
+      });
+    }
+
+    datesEl.appendChild(cell);
+  }
+}
+
+document.getElementById('calPrev').addEventListener('click', () => {
+  current.month--;
+  if (current.month < 0) { current.month = 11; current.year--; }
+  renderCalendar();
+});
+
+document.getElementById('calNext').addEventListener('click', () => {
+  current.month++;
+  if (current.month > 11) { current.month = 0; current.year++; }
