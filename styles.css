@@ -114,3 +114,63 @@ img { max-width: 100%; display: block; }
   border: 2px solid var(--dark);
   border-radius: 100px;
 }
+.btn-dark-outline:hover {
+  background: var(--dark);
+  color: #fff;
+}
+.btn-dark {
+  background: var(--dark);
+  color: #fff;
+  border-color: var(--dark);
+  border-radius: 100px;
+}
+.btn-dark:hover { background: #333; }
+
+
+/* ---- Section Badge ---- */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
+.gold-badge {
+  background: #FFF8E7;
+  color: var(--primary);
+  border: 1px solid #ffe08a;
+}
+.badge-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.badge-dot.orange  { background: var(--orange); }
+.badge-dot.gold-dot{ background: var(--primary); }
+.center-badge { display: flex; justify-content: center; }
+
+/* ---- Shared section heading ---- */
+.section-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: var(--dark);
+}
+.section-title.center { text-align: center; }
+.section-sub {
+  font-size: 18px;
+  color:#4F4D4D;
+  line-height: 28px;
+  margin-top: 14px;
+}
+.section-sub.center { text-align: center; }
+
+.text-gold   { color: var(--primary); }
+.text-orange { color: var(--primary); }
+
+/* ======================================================
+   NAVBAR
+   ====================================================== */
