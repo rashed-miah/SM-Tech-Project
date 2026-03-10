@@ -509,3 +509,53 @@ img { max-width: 100%; display: block; }
 .why-title {
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 700;
+  line-height: 1.15;
+  color: #fff;
+}
+.why-desc {
+  font-size: 16px;
+  color: rgba(255,255,255,0.70);
+  line-height: 1.75;
+  max-width: 460px;
+}
+.why-note {
+  font-size: 15px;
+  color: rgba(255,255,255,0.60);
+  line-height: 1.6;
+}
+/* RIGHT */
+.why-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-visual {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  display: block;
+}
+
+/* ======================================================
+   SCALE SMARTER
+   ====================================================== */
+.scale-section {
+  background: #fff;
+  padding: 90px 0;
+}
+.scale-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+.scale-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.scale-badge-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
