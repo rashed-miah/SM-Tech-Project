@@ -34,3 +34,15 @@ navLinks.querySelectorAll('a').forEach(a => {
   });
 });
 
+// ---- Approach Tabs ----
+const tabBtns = document.querySelectorAll('.tab-btn');
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    tabBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
+    const tab = btn.getAttribute('data-tab');
+    document.getElementById(tab + 'Tab').classList.remove('hidden');
+  });
+});
+

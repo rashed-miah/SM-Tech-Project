@@ -814,3 +814,88 @@ img { max-width: 100%; display: block; }
   margin-bottom: 36px;
 }
 .booking-main-title {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+.booking-main-sub {
+  font-size: 14px;
+  color: var(--gray-mid);
+}
+/* Outer card box */
+.booking-box {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0;
+margin-inline: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.07);
+  position: relative;
+}
+/* LEFT panel */
+.booking-left {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 420px;
+}
+.bf-name {
+  font-size: 14px;
+  color: var(--gray-mid);
+  margin: 0;
+}
+.bf-head {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.3;
+  margin: 0;
+}
+.bf-meta {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.bf-meta-icon {
+  font-size: 15px;
+  color: var(--gray-mid);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.bf-meta-item {
+  font-size: 14px;
+  color: var(--gray-text);
+  line-height: 1.5;
+}
+.booking-cookie {
+  margin-top: auto;
+}
+.booking-cookie a {
+  font-size: 13px;
+  color: #3b82f6;
+  text-decoration: underline;
+}
+/* Vertical divider */
+.booking-divider {
+  width: 1px;
+  background: #e5e7eb;
+  align-self: stretch;
+}
+/* RIGHT calendar panel */
+.booking-right {
+  padding: 36px 32px;
+  position: relative;
+}
+/* Calendly diagonal corner ribbon */
+.calendly-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 96px;
+  height: 96px;
