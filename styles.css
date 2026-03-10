@@ -38,3 +38,79 @@ img { max-width: 100%; display: block; }
   padding: 0 24px;
 }
 
+/* ---- Buttons ---- */
+.btn {
+  display: inline-block;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+  white-space: nowrap;
+  padding: 12px 24px;
+}
+/* =============================================
+   COMMON BRAND BUTTON  â€“  use class: btn-brand
+   ============================================= */
+.btn-brand,
+.btn-primary,
+.btn-hero-pill,
+.btn-gold {
+  display: inline-block;
+  background: var(--primary);
+  color: #111;
+  border: none;
+  border-right:  2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-brand:hover,
+.btn-primary:hover,
+.btn-hero-pill:hover,
+.btn-gold:hover {
+  background: var(--primary-dk);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255,165,0,0.30);
+}
+
+/* =============================================
+   BRAND BUTTON LIGHT  â€“ use class: btn-brand-light
+   White border â€“ for dark backgrounds
+   ============================================= */
+.btn-brand-light {
+  display: inline-block;
+  background: var(--primary);
+  color: #111;
+  border: none;
+  border-right:  2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+  width: fit-content;
+}
+.btn-brand-light:hover {
+  background: var(--primary-dk);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255,165,0,0.35);
+}
+
+.btn-dark-outline {
+  background: transparent;
+  color: var(--dark);
+  border: 2px solid var(--dark);
+  border-radius: 100px;
+}
