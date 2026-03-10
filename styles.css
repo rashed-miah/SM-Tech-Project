@@ -559,3 +559,79 @@ img { max-width: 100%; display: block; }
   font-size: 16px;
   font-weight: 500;
   color: #333;
+}
+/* 2Ã—2 card grid */
+.scale-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.sc-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 10px 28px;
+  background: #fff;
+  height: 222px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.sc-card:hover {
+  box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+.sc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+/* override hc-icon margin when inside a card top row */
+.sc-top .hc-icon { margin-bottom: 0; }
+.sc-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.sc-icon {
+  font-size: 26px;
+  color: var(--primary);
+  opacity: 0.85;
+}
+.sc-divider {
+  width: 3px;
+  height: 32px;
+  background: var(--primary);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.sc-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sc-list li {
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.55;
+}
+.sc-list li i {
+  color: var(--primary);
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ======================================================
+   HARSH REALITY
+   ====================================================== */
+.harsh-reality {
+  background: #fff;
+  padding: 90px 0;
+}
+.reality-header {
+  display: flex;
