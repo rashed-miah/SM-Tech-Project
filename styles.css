@@ -289,3 +289,113 @@ img { max-width: 100%; display: block; }
 .hero-badge-icon {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  width: 50px; height: 25px;
+  border-radius: 5px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.badge-highlight { color: var(--primary); font-weight: 600; }
+
+/* === Hero Title === */
+.hero-title {
+  font-size: clamp(36px, 5vw, 62px);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #111;
+  margin-bottom: 32px;
+  letter-spacing: -0.02em;
+}
+.hero-title-orange {
+  color: var(--primary);
+  display: block;
+}
+
+/* === Floating Cards (shared base) === */
+.hero-card {
+  position: absolute;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.13);
+  padding: 18px 20px;
+}
+
+/* LEFT card: Total Incomes bar chart, tilted counter-clockwise */
+.left-card {
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-15deg);
+  width: 210px;
+  padding: 22px 28px;
+}
+.card-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 14px;
+  text-align: left;
+}
+.card-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 60px;
+  margin-bottom: 4px;
+}
+.bar-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 4px;
+  height: 100%;
+  justify-content: flex-end;
+}
+.bar {
+  width: 100%;
+  background: #E8E8E8;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.4s ease;
+}
+.bar.active { background: var(--primary); }
+.bar-month {
+  font-size: 9px;
+  color: #aaa;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* RIGHT card: 45k+ Users + Rating, tilted clockwise */
+.right-card {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%) rotate(15deg);
+  width: 200px;
+  text-align: left;
+  padding: 18px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.rc-avatars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rc-avatars .av {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  display: block;
+  margin-left: -8px;
+}
+.rc-avatars .av:first-child { margin-left: 0; }
+.rc-text { display: flex; flex-direction: column; gap: 2px; }
+.rc-users {
+  font-size: 14px;
+  font-weight: 700;
