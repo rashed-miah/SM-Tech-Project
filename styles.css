@@ -899,3 +899,153 @@ margin-inline: 10px;
   right: 0;
   width: 96px;
   height: 96px;
+  overflow: hidden;
+  border-radius: 0 16px 0 0;
+  z-index: 2;
+}
+.calendly-ribbon::after {
+  content: "Power By Calendar";
+  white-space: pre;
+  position: absolute;
+  top: 22px;
+  right: -28px;
+  width: 120px;
+  background: #2d3748;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  padding: 6px 0;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+.cal-select-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+.cal-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.cal-month { font-size: 15px; font-weight: 700; color: var(--dark); }
+.cal-prev, .cal-next {
+  background: #eff6ff;
+  border: none;
+  border-radius: 50%;
+  width: 32px; height: 32px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.cal-prev:hover, .cal-next:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+.cal-day-names {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gray-mid);
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+.cal-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+.cal-date {
+  aspect-ratio: 1;
+  max-width: 34px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s;
+  color: var(--dark);
+  border: 1px solid transparent;
+}
+/* Weekdays (Monâ€“Fri) highlighted in blue like screenshot */
+.cal-date.available {
+  background: #eff6ff;
+  color: #3b82f6;
+  font-weight: 600;
+}
+.cal-date.available:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+.cal-date.selected {
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 700;
+}
+.cal-date.today:not(.selected) {
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  font-weight: 700;
+}
+.cal-date.empty  { cursor: default; }
+.cal-date.past   { color: #d1d5db; cursor: not-allowed; }
+.cal-date.weekend { color: #9ca3af; cursor: not-allowed; }
+
+/* Timezone */
+.cal-timezone {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.tz-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dark);
+}
+.tz-select {
+  font-size: 13px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: var(--dark);
+  background: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+/* Footer row â€” part of the card */
+.booking-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 14px 24px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 13px;
+  color: var(--gray-mid);
+  border-radius: 0 0 16px 16px;
+  background: #fff;
+  grid-column: 1 / -1;
+}
+.bf-email { display: flex; align-items: center; gap: 8px; color: #3b82f6; }
+.bf-note  { color: var(--gray-mid); }
+
+/* ======================================================
+   FOOTER
