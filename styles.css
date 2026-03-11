@@ -1,6 +1,6 @@
-/* =====================================================
-   FINTRIXX â€“ Pixel Perfect Styles
-   ===================================================== */
+/* 
+   FINTRIXX Pixel Perfect Styles
+    */
 
 /* ---- Reset & Base ---- */
 *,
@@ -67,9 +67,9 @@ img {
   white-space: nowrap;
   padding: 12px 24px;
 }
-/* =============================================
+/* 
    COMMON BRAND BUTTON  â€“  use class: btn-brand
-   ============================================= */
+ */
 .btn-brand,
 .btn-primary,
 .btn-hero-pill,
@@ -98,10 +98,10 @@ img {
   box-shadow: 0 8px 24px rgba(255, 165, 0, 0.3);
 }
 
-/* =============================================
+/* 
    BRAND BUTTON LIGHT  â€“ use class: btn-brand-light
    White border â€“ for dark backgrounds
-   ============================================= */
+    */
 .btn-brand-light {
   display: inline-block;
   background: var(--primary);
@@ -205,9 +205,7 @@ img {
   color: var(--primary);
 }
 
-/* ======================================================
-   NAVBAR
-   ====================================================== */
+/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -358,7 +356,7 @@ img {
   display: block;
 }
 
-/* === Floating Cards (shared base) === */
+/* Floating Cards (shared base) */
 .hero-card {
   position: absolute;
   background: #fff;
@@ -467,9 +465,7 @@ img {
   font-size: 13px;
 }
 
-/* ======================================================
-   STATS BANNER
-   ====================================================== */
+/* STATS BANNER */
 .stats-banner {
   background: #fff;
   padding: 48px 0;
@@ -521,9 +517,9 @@ img {
   display: none;
 }
 
-/* ======================================================
+/* 
    STRUGGLING
-   ====================================================== */
+   */
 .struggling {
   background: #fff;
   padding-top: 40px;
@@ -1400,6 +1396,7 @@ img {
 }
 .footer-desc {
   font-size: 13px;
+  margin-top: 8px;
   line-height: 1.75;
   color: rgba(255, 255, 255, 0.55);
   max-width: 300px;
@@ -1417,7 +1414,7 @@ img {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 .footer-links li a {
   font-size: 13px;
