@@ -1,559 +1,762 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FINTRIXX â€“ Turn Your Amazon Struggles into Success</title>
-  <meta name="description" content="FINTRIXX helps Amazon sellers scale smarter, sell faster, and maximize profits. Scale your business with expert Amazon strategies." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FINTRIXX ‚Turn Your Amazon Struggles into Success</title>
+    <meta
+      name="description"
+      content="FINTRIXX helps Amazon sellers scale smarter, sell faster, and maximize profits. Scale your business with expert Amazon strategies."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-  <!-- ===== NAVBAR ===== -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <!-- Logo: atom icon SVG + text -->
-      <a href="#" class="logo">
-        <svg class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="20" cy="20" rx="18" ry="7" stroke="#ffa500" stroke-width="2.2" fill="none"/>
-          <ellipse cx="20" cy="20" rx="18" ry="7" stroke="#ffa500" stroke-width="2.2" fill="none" transform="rotate(60 20 20)"/>
-          <ellipse cx="20" cy="20" rx="18" ry="7" stroke="#ffa500" stroke-width="2.2" fill="none" transform="rotate(120 20 20)"/>
-          <circle cx="20" cy="20" r="3" fill="#ffa500"/>
-        </svg>
-      </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#services" class="nav-active">Services</a>
-        <a href="#about">About</a>
-        <a href="#booking">Contact</a>
-      </nav>
-      <a href="#booking" class="btn btn-primary nav-cta">Book a Free Consultation</a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="container hero-container">
-
-      <!-- Amazon badge pill -->
-      <div class="hero-badge">
-        <span class="hero-badge-icon"><i class="fa-brands fa-amazon"></i></span>
-        <span>Your Full-Service <span class="badge-highlight">Amazon Partner</span></span>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR  -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <!-- Logo: atom icon SVG + text -->
+        <a href="#" class="logo">
+          <svg
+            class="logo-svg"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse
+              cx="20"
+              cy="20"
+              rx="18"
+              ry="7"
+              stroke="#ffa500"
+              stroke-width="2.2"
+              fill="none"
+            />
+            <ellipse
+              cx="20"
+              cy="20"
+              rx="18"
+              ry="7"
+              stroke="#ffa500"
+              stroke-width="2.2"
+              fill="none"
+              transform="rotate(60 20 20)"
+            />
+            <ellipse
+              cx="20"
+              cy="20"
+              rx="18"
+              ry="7"
+              stroke="#ffa500"
+              stroke-width="2.2"
+              fill="none"
+              transform="rotate(120 20 20)"
+            />
+            <circle cx="20" cy="20" r="3" fill="#ffa500" />
+          </svg>
+        </a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#services" class="nav-active">Services</a>
+          <a href="#about">About</a>
+          <a href="#booking">Contact</a>
+        </nav>
+        <a href="#booking" class="btn btn-primary nav-cta"
+          >Book a Free Consultation</a
+        >
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+    </header>
 
-      <!-- Headline -->
-      <h1 class="hero-title">
-        Turn Your Amazon Struggles<br />
-        into Successâ€”Save Time,<br />
-        <span class="hero-title-orange">Maximize Profits!</span>
-      </h1>
+    <!--  HERO  -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <!-- Amazon badge pill -->
+        <div class="hero-badge">
+          <span class="hero-badge-icon"
+            ><i class="fa-brands fa-amazon"></i
+          ></span>
+          <span
+            >Your Full-Service
+            <span class="badge-highlight">Amazon Partner</span></span
+          >
+        </div>
 
-      <!-- CTA Button -->
-      <a href="#booking" class="btn btn-hero-pill">Book a Free Consultation</a>
+        <!-- Headline -->
+        <h1 class="hero-title">
+          Turn Your Amazon Struggles<br />
+          into Success—Save Time,<br />
+          <span class="hero-title-orange">Maximize Profits!</span>
+        </h1>
 
-      <!-- Floating card LEFT: Total Incomes bar chart, rotated -10deg -->
-      <div class="hero-card left-card">
-        <div class="card-label">Total Incomes</div>
-        <div class="card-chart">
-          <div class="bar-wrap">
-            <div class="bar" style="height:45%"></div>
-            <span class="bar-month">Jan</span>
+        <!-- CTA Button -->
+        <a href="#booking" class="btn btn-hero-pill"
+          >Book a Free Consultation</a
+        >
+
+        <!-- Floating card LEFT: Total Incomes bar chart, rotated -10deg -->
+        <div class="hero-card left-card">
+          <div class="card-label">Total Incomes</div>
+          <div class="card-chart">
+            <div class="bar-wrap">
+              <div class="bar" style="height: 45%"></div>
+              <span class="bar-month">Jan</span>
+            </div>
+            <div class="bar-wrap">
+              <div class="bar" style="height: 62%"></div>
+              <span class="bar-month">Feb</span>
+            </div>
+            <div class="bar-wrap">
+              <div class="bar" style="height: 50%"></div>
+              <span class="bar-month">Mar</span>
+            </div>
+            <div class="bar-wrap">
+              <div class="bar active" style="height: 85%"></div>
+              <span class="bar-month">Apr</span>
+            </div>
+            <div class="bar-wrap">
+              <div class="bar" style="height: 58%"></div>
+              <span class="bar-month">May</span>
+            </div>
           </div>
-          <div class="bar-wrap">
-            <div class="bar" style="height:62%"></div>
-            <span class="bar-month">Feb</span>
+        </div>
+
+        <!-- Floating card RIGHT: 45k+ Users, 4.7 Rating, rotated +8deg -->
+        <div class="hero-card right-card">
+          <div class="rc-avatars">
+            <img class="av" src="https://i.pravatar.cc/60?img=1" alt="user" />
+            <img class="av" src="https://i.pravatar.cc/60?img=2" alt="user" />
+            <img class="av" src="https://i.pravatar.cc/60?img=3" alt="user" />
           </div>
-          <div class="bar-wrap">
-            <div class="bar" style="height:50%"></div>
-            <span class="bar-month">Mar</span>
-          </div>
-          <div class="bar-wrap">
-            <div class="bar active" style="height:85%"></div>
-            <span class="bar-month">Apr</span>
-          </div>
-          <div class="bar-wrap">
-            <div class="bar" style="height:58%"></div>
-            <span class="bar-month">May</span>
+          <div class="rc-text">
+            <div class="rc-users">45k+ Users</div>
+            <div class="rc-rating">
+              <span class="rc-star"><i class="fas fa-star"></i></span>
+              4.7 Rating
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Floating card RIGHT: 45k+ Users, 4.7 Rating, rotated +8deg -->
-      <div class="hero-card right-card">
-        <div class="rc-avatars">
-          <img class="av" src="https://i.pravatar.cc/60?img=1" alt="user" />
-          <img class="av" src="https://i.pravatar.cc/60?img=2" alt="user" />
-          <img class="av" src="https://i.pravatar.cc/60?img=3" alt="user" />
-        </div>
-        <div class="rc-text">
-          <div class="rc-users">45k+ Users</div>
-          <div class="rc-rating"><span class="rc-star">â˜…</span> 4.7 Rating</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== STATS BANNER ===== -->
-  <section class="stats-banner">
-    <div class="container">
-      <p class="stats-title">Amazon Market Statistics Worldwide 2024</p>
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number">600 million</div>
-          <div class="stat-label">Amazon Offers Over Products</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">$638.0 billion</div>
-          <div class="stat-label">Amazon Global Net Sales Revenue</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">11.95 million</div>
-          <div class="stat-label">Amazon Handles Orders Daily.</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">$1.6 billion</div>
-          <div class="stat-label">Amazon Average Daily Sales Revenue</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== STRUGGLING SECTION ===== -->
-  <section class="struggling" id="about">
-    <div class="container struggling-inner">
-      <div class="section-badge orange-badge">
-        <span class="hero-badge-icon"><i class="fa-brands fa-amazon"></i></span>
-        <span>our <span class="badge-highlight">Story</span></span>
-      </div>
-      <h2 class="section-title center">
-        Struggling With Amazon Sales? Let's Scale Your Businessâ€”<span class="text-orange">Faster, Smarter</span> &amp; Stress-Free!
-      </h2>
-      <p class="section-sub center">
-        Amazon is complex, but success doesnâ€™t have to be. At <span class="text-orange">FINTRIXX</span>, we help sellers increase<br class="br-desk"/>
-        sales, optimize ads, rank higher, and expand into new markets â€” without wasting time or<br class class="br-desk"/>
-        money. Let's take our insights into definite success.
-      </p>
-      <a href="#booking" class="btn btn-primary">Book a Free Strategy Call</a>
-    </div>
-  </section>
-
-  <!-- ===== WHY CHOOSE ===== -->
-  <section class="why-choose" id="services">
-    <div class="container why-inner">
-
-      <!-- LEFT: text content -->
-      <div class="why-left">
-        <div class="why-badge">
-          <span class="hero-badge-icon"><i class="fa-brands fa-amazon"></i></span>
-          <span class="why-badge-text">Why <span class="text-gold">Choose Us</span></span>
-        </div>
-        <h2 class="why-title">
-          Why Choose <span class="text-gold">FINTRIXX?</span>
-        </h2>
-        <p class="why-desc">
-          Amazon is tough&mdash;we make it easy. At FINTRIXX, we help sellers rank higher, scale faster,
-          &amp; sell smarter. We analyze trends, optimize ads, manage inventory, &amp; protect your account
-          so you can focus on your business.
-        </p>
-        <p class="why-note"><i class="fa-solid fa-rocket"></i> No more guesswork. No more wasted money. Just real results.</p>
-        <a href="#booking" class="btn-brand-light">Book a Free Consultation</a>
-      </div>
-
-      <!-- RIGHT: visual image from assets/ -->
-      <div class="why-right">
-        <img src="assets/Container (1).png" alt="Why Choose FINTRIXX visual" class="why-visual" />
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== SCALE SMARTER ===== -->
-  <section class="scale-section" id="scale">
-    <div class="container">
-
-      <!-- Badge + Title + Sub -->
-      <div class="scale-header">
-        <div class="scale-badge">
-          <span class="hero-badge-icon"><i class="fa-brands fa-amazon"></i></span>
-          <span class="scale-badge-text">Our <span class="text-gold">Services</span></span>
-        </div>
-        <h2 class="section-title center">Scale Smarter, <span class="text-gold">Sell Faster</span></h2>
-        <p class="section-sub center">We handle everything Amazon so you can focus on growing.</p>
-      </div>
-
-      <!-- 2x2 service cards -->
-      <div class="scale-cards">
-
-        <!-- Card 1: Amazon Growth & Advertising -->
-        <div class="sc-card">
-          <div class="sc-top">
-            <span class="sc-title">Amazon Growth & Advertising</span>
-            <div class="hc-icon">ðŸš€</div>
+    <!--  STATS BANNER -->
+    <section class="stats-banner">
+      <div class="container">
+        <p class="stats-title">Amazon Market Statistics Worldwide 2024</p>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">600 million</div>
+            <div class="stat-label">Amazon Offers Over Products</div>
           </div>
-          <div class="sc-divider"></div>
-          <ul class="sc-list">
-            <li><i class="fa-regular fa-circle-check"></i> Bid & Budget Optimization â€“ Higher ROI, lower ACOS.</li>
-            <li><i class="fa-regular fa-circle-check"></i> Monthly PPC Strategy â€“ Tailored for long-term growth.</li>
-          </ul>
-        </div>
-
-        <!-- Card 2: SEO & Product Ranking -->
-        <div class="sc-card">
-          <div class="sc-top">
-            <span class="sc-title">SEO & Product Ranking</span>
-            <div class="hc-icon">ðŸ“ˆ</div>
+          <div class="stat-item">
+            <div class="stat-number">$638.0 billion</div>
+            <div class="stat-label">Amazon Global Net Sales Revenue</div>
           </div>
-          <div class="sc-divider"></div>
-          <ul class="sc-list">
-            <li><i class="fa-regular fa-circle-check"></i> Organic & Sponsored Ranking â€“ More visibility, more sales.</li>
-            <li><i class="fa-regular fa-circle-check"></i> Keyword & Competitor Analysis â€“ Stay ahead of the competition.</li>
-          </ul>
-        </div>
-
-        <!-- Card 3: Inventory & Account Management -->
-        <div class="sc-card">
-          <div class="sc-top">
-            <span class="sc-title">Inventory & Account Management</span>
-            <div class="hc-icon">ðŸ“¦</div>
+          <div class="stat-item">
+            <div class="stat-number">11.95 million</div>
+            <div class="stat-label">Amazon Handles Orders Daily.</div>
           </div>
-          <div class="sc-divider"></div>
-          <ul class="sc-list">
-            <li><i class="fa-regular fa-circle-check"></i> Inventory Forecasting & Restocking â€“ No stockouts, no overstocking.</li>
-            <li><i class="fa-regular fa-circle-check"></i> Amazon Account Health & Compliance â€“ Avoid suspensions & violations.</li>
-          </ul>
-        </div>
-
-        <!-- Card 4: Scaling & Expansion -->
-        <div class="sc-card">
-          <div class="sc-top">
-            <span class="sc-title">Scaling & Expansion</span>
-            <div class="hc-icon">ðŸŒ</div>
+          <div class="stat-item">
+            <div class="stat-number">$1.6 billion</div>
+            <div class="stat-label">Amazon Average Daily Sales Revenue</div>
           </div>
-          <div class="sc-divider"></div>
-          <ul class="sc-list">
-            <li><i class="fa-regular fa-circle-check"></i> Launching New Products â€“ Market research-backed success.</li>
-            <li><i class="fa-regular fa-circle-check"></i> International Expansion â€“ Sell beyond borders with ease.</li>
-          </ul>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== OUR APPROACH ===== -->
-  <section class="approach" id="approach">
-    <div class="container approach-inner">
-      <div class="approach-images">
-        <img src="approach-bg.jpg" alt="Growth chart" class="approach-img main-img" onerror="this.style.background='#1a3a5c';this.removeAttribute('src')" />
-        <img src="approach-laptop.jpg" alt="Analyst working" class="approach-img overlay-img" onerror="this.style.background='#2a4a6c';this.removeAttribute('src')" />
-      </div>
-      <div class="approach-content">
-        <h2 class="approach-title">Our Approach</h2>
-        <div class="approach-tabs">
-          <button class="tab-btn active" data-tab="mission">Mission</button>
-          <button class="tab-btn" data-tab="vision">Vision</button>
-        </div>
-        <div class="tab-content" id="missionTab">
-          <p>
-            Founded in 2022, GrowthMade was created to address the challenges of traditional
-            marketingâ€”long delays, expensive processes, and limited focus. We started with a
-            vision to make landing pages accessible, expandable, and convenient for everyone. Today,
-            we service over 1 million users, helping them manage their finances with ease.
-          </p>
-        </div>
-        <div class="tab-content hidden" id="visionTab">
-          <p>
-            Our vision is to be the most trusted growth partner for Amazon sellers worldwide,
-            empowering businesses of all sizes to thrive in the digital marketplace with
-            data-driven strategies and cutting-edge technology.
-          </p>
-        </div>
-        <a href="#booking" class="btn btn-gold">Book a Free Consultation</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== HARSH REALITY ===== -->
-  <section class="harsh-reality" id="reality">
-    <div class="container">
-
-      <!-- Badge -->
-      <div class="reality-header">
-        <div class="scale-badge">
-          <span class="hero-badge-icon"><i class="fa-brands fa-amazon"></i></span>
-          <span class="scale-badge-text">Growth <span class="text-gold">Business</span></span>
+    <!--  STRUGGLING SECTION  -->
+    <section class="struggling" id="about">
+      <div class="container struggling-inner">
+        <div class="section-badge orange-badge">
+          <span class="hero-badge-icon"
+            ><i class="fa-brands fa-amazon"></i
+          ></span>
+          <span>our <span class="badge-highlight">Story</span></span>
         </div>
         <h2 class="section-title center">
-          The Harsh Reality of<br/>Selling on <span class="text-gold">Amazon</span>
+          Struggling With Amazon Sales? Let's Scale Your Business—<span
+            class="text-orange"
+            >Faster, Smarter</span
+          >
+          &amp; Stress-Free!
         </h2>
         <p class="section-sub center">
-          Selling on Amazon is tough. Do these struggles sound familiar? Without the<br class="br-desk"/>
-          right strategy, you're losing money, time, and opportunities.
+          Amazon is complex, but success d doesn’t have to be. At
+          <span class="text-orange">FINTRIXX</span>, we help sellers increase<br
+            class="br-desk"
+          />
+          sales, optimize ads, rank higher, and expand into new markets markets
+          —without wasting time or<br class class="br-desk" />
+          money. Let's take our insights into definite success.
         </p>
+        <a href="#booking" class="btn btn-primary">Book a Free Strategy Call</a>
       </div>
+    </section>
 
-      <!-- 3x2 card grid â€” reuses sc-card + sc-divider pattern -->
-      <div class="reality-grid">
-
-        <div class="sc-card">
-          <div class="rc-title">Lost in Competition?</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc">10M+ sellers & 350M+ products â€” how do you stand out?</p>
-        </div>
-
-        <div class="sc-card">
-          <div class="rc-title">Burning Cash on Ads?</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc">PPC feels like a money pit with no returns.</p>
-        </div>
-
-        <div class="sc-card">
-          <div class="rc-title">Low Rankings?</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc">Amazon's complex algorithms keep changing.</p>
-        </div>
-
-        <div class="sc-card">
-          <div class="rc-title">Inventory Headaches?</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc">Stockouts, overstocking, at the wrong time?</p>
-        </div>
-
-        <div class="sc-card">
-          <div class="rc-title">Risk of Account Suspension?</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc">Amazon's strict policies make selling stressful.</p>
-        </div>
-
-        <div class="sc-card">
-          <div class="rc-title">Wasting Time & Getting Stuck?</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc">Managing it all alone is overwhelming.</p>
-        </div>
-
-      </div>
-
-      <!-- CTA -->
-      <div class="reality-cta">
-        <a href="#booking" class="btn-brand">Talk to an Expert</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== HOW WE HELP ===== -->
-  <section class="how-help" id="help">
-    <div class="container">
-
-      <!-- Header -->
-      <div class="reality-header">
-        <div class="scale-badge">
-          <span class="hero-badge-icon"><i class="fa-brands fa-amazon"></i></span>
-          <span class="scale-badge-text" style="color:#fff;">Growth <span class="text-gold">Business</span></span>
-        </div>
-        <h2 class="section-title center" style="color:#fff;">
-          How We Help You<br/>Win on <span class="text-gold">Amazon</span>
-        </h2>
-        <p class="section-sub center" style="color:rgba(255,255,255,0.65);">
-          At FINTRIXX, we don't guessâ€”we use data-driven<br class="br-desk"/>
-          strategies to scale your business.
-        </p>
-      </div>
-
-      <!-- 3x2 dark cards â€” reuses sc-divider, rc-title, rc-desc -->
-      <div class="help-grid">
-
-        <div class="help-dark-card">
-          <div class="rc-title">We Make You Stand Out</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc" style="color:rgba(255,255,255,0.75);">Targeted marketing to reach the right buyers.</p>
-        </div>
-
-        <div class="help-dark-card">
-          <div class="rc-title">We Fix Your Rankings</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc" style="color:rgba(255,255,255,0.75);">SEO, keywords & ads for visibility.</p>
-        </div>
-
-        <div class="help-dark-card">
-          <div class="rc-title">We Optimize Your Ads</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc" style="color:rgba(255,255,255,0.75);">No wasted budgetâ€”only high ROI advertising.</p>
-        </div>
-
-        <div class="help-dark-card">
-          <div class="rc-title">We Manage Your Inventory</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc" style="color:rgba(255,255,255,0.75);">So you never run out of stock or overstock.</p>
-        </div>
-
-        <div class="help-dark-card">
-          <div class="rc-title">We Keep Your Account Safe</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc" style="color:rgba(255,255,255,0.75);">Avoid suspensions, policy violations & account risks.</p>
-        </div>
-
-        <div class="help-dark-card">
-          <div class="rc-title">We Scale Your Business</div>
-          <div class="sc-divider"></div>
-          <p class="rc-desc" style="color:rgba(255,255,255,0.75);">Expansion, market entry & growth.</p>
-        </div>
-
-      </div>
-
-      <!-- CTA -->
-      <div class="reality-cta">
-        <a href="#booking" class="btn-brand-light">Talk to an Expert</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== BOOKING / CALENDAR ===== -->
-  <section class="booking" id="booking">
-    <div class="container">
-
-      <!-- Top header above the box -->
-      <div class="booking-top-header">
-        <div class="scale-badge" style="justify-content:center; margin-bottom:12px;">
-          <span class="hero-badge-icon"><i class="fa-brands fa-amazon"></i></span>
-          <span class="scale-badge-text">Contact <span class="text-gold">Us</span></span>
-        </div>
-        <h2 class="booking-main-title">
-          Let's Scale Your <span class="text-gold">Business!</span>
-        </h2>
-        <p class="booking-main-sub">FINTRIXX â€“ Your Amazon Growth Partner</p>
-      </div>
-
-      <!-- Blue-dashed outer box -->
-      <div class="booking-box">
-
-        <!-- LEFT: info panel -->
-        <div class="booking-left">
-          <p class="bf-name">Naim</p>
-          <h3 class="bf-head">Book Your Strategy <br> Session: Accelerate Your <br> Growth!</h3>
-          <div class="bf-meta">
-            <i class="fa-regular fa-clock bf-meta-icon"></i>
-            <span class="bf-meta-item">30 min</span>
+    <!--  WHY CHOOSE -->
+    <section class="why-choose" id="services">
+      <div class="container why-inner">
+        <!-- LEFT: text content -->
+        <div class="why-left">
+          <div class="why-badge">
+            <span class="hero-badge-icon"
+              ><i class="fa-brands fa-amazon"></i
+            ></span>
+            <span class="why-badge-text"
+              >Why <span class="text-gold">Choose Us</span></span
+            >
           </div>
-          <div class="bf-meta">
-            <i class="fa-regular fa-desktop bf-meta-icon"></i>
-            <span class="bf-meta-item">Web conferencing details provided upon confirmation.</span>
-          </div>
-          <div class="booking-cookie">
-            <a href="#">Cookie settings</a>
-          </div>
+          <h2 class="why-title">
+            Why Choose <span class="text-gold">FINTRIXX?</span>
+          </h2>
+          <p class="why-desc">
+            Amazon is tough&mdash;we make it easy. At FINTRIXX, we help sellers
+            rank higher, scale faster, &amp; sell smarter. We analyze trends,
+            optimize ads, manage inventory, &amp; protect your account so you
+            can focus on your business.
+          </p>
+          <p class="why-note">
+            🚀 No more guesswork. No more wasted money. Just real results.
+          </p>
+          <a href="#booking" class="btn-brand-light"
+            >Book a Free Consultation</a
+          >
         </div>
 
-        <!-- Divider -->
-        <div class="booking-divider"></div>
-
-        <!-- RIGHT: calendar -->
-        <div class="booking-right">
-          <!-- Powered by Calendly ribbon -->
-          <div class="calendly-ribbon"></div>
-
-          <p class="cal-select-label">Select a Date &amp; Time</p>
-          <div class="cal-nav">
-            <button class="cal-prev" id="calPrev">&#8249;</button>
-            <span class="cal-month" id="calMonth"></span>
-            <button class="cal-next" id="calNext">&#8250;</button>
-          </div>
-          <div class="cal-day-names">
-            <span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span>
-          </div>
-          <div class="cal-dates" id="calDates"></div>
-
-          <div class="cal-timezone">
-            <span class="tz-label"><i class="fa-solid fa-earth-americas"></i> Time zone</span>
-            <select class="tz-select">
-              <option>Asia/Dhaka (3:00pm)</option>
-              <option>America/New_York (UTC-5)</option>
-              <option>Europe/London (UTC+0)</option>
-              <option>Asia/Tokyo (UTC+9)</option>
-            </select>
-          </div>
+        <!-- RIGHT: visual image from assets/ -->
+        <div class="why-right">
+          <img
+            src="assets/Container (1).png"
+            alt="Why Choose FINTRIXX visual"
+            class="why-visual"
+          />
         </div>
-
-        <!-- Bottom footer row spans full card width -->
-        <div class="booking-footer-row">
-          <span class="bf-email"><i class="fa-regular fa-envelope"></i> leadsbridgesdemo@example.com</span>
-          <span class="bf-note"><span class="text-gold">Note:</span> Have a question? Need a strategy? We're here to help.</span>
-        </div>
-
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer" id="footer">
-    <div class="container">
-
-      <!-- Blue-dashed footer box â€” reuses same dashed border style -->
-      <div class="footer-box container">
-
-        <!-- Col 1: Logo + description -->
-        <div class="footer-brand">
-          <!-- reuse hero-badge-icon for the atom logo -->
-          <svg class="logo-svg footer-logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="20" cy="20" rx="18" ry="7" stroke="#ffa500" stroke-width="2.2" fill="none"/>
-            <ellipse cx="20" cy="20" rx="18" ry="7" stroke="#ffa500" stroke-width="2.2" fill="none" transform="rotate(60 20 20)"/>
-            <ellipse cx="20" cy="20" rx="18" ry="7" stroke="#ffa500" stroke-width="2.2" fill="none" transform="rotate(120 20 20)"/>
-            <circle cx="20" cy="20" r="3" fill="#ffa500"/>
-          </svg>
-          <p class="footer-desc">
-            FINTRIXX â€“ Your Amazon Growth Partner Since 2016, we boost Amazon
-            success with expert SEO, PPC, and growth strategies.
+    <!--  SCALE SMARTER -->
+    <section class="scale-section" id="scale">
+      <div class="container">
+        <!-- Badge + Title + Sub -->
+        <div class="scale-header">
+          <div class="scale-badge">
+            <span class="hero-badge-icon"
+              ><i class="fa-brands fa-amazon"></i
+            ></span>
+            <span class="scale-badge-text"
+              >Our <span class="text-gold">Services</span></span
+            >
+          </div>
+          <h2 class="section-title center">
+            Scale Smarter, <span class="text-gold">Sell Faster</span>
+          </h2>
+          <p class="section-sub center">
+            We handle everything Amazon so you can focus on growing.
           </p>
         </div>
 
-        <!-- Col 2: Home nav links -->
-        <div class="footer-col">
-          <h4 class="footer-col-title">Home</h4>
-          <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Why Choose Us</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <!-- 2x2 service cards -->
+        <div class="scale-cards">
+          <!-- Card 1: Amazon Growth & Advertising -->
+          <div class="sc-card">
+            <div class="sc-top">
+              <span class="sc-title">Amazon Growth & Advertising</span>
+              <div class="hc-icon">🚀</div>
+            </div>
+            <div class="sc-divider"></div>
+            <ul class="sc-list">
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Bid & Budget
+                Optimization – Higher ROI, lower ACOS.
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Monthly PPC Strategy
+                – Tailored for long-term growth.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2: SEO & Product Ranking -->
+          <div class="sc-card">
+            <div class="sc-top">
+              <span class="sc-title">SEO & Product Ranking</span>
+              <div class="hc-icon">📈</div>
+            </div>
+            <div class="sc-divider"></div>
+            <ul class="sc-list">
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Organic & Sponsored
+                Ranking – More visibility, more sales
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Keyword & Competitor
+                Analysis – Stay ahead of the competition.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Inventory & Account Management -->
+          <div class="sc-card">
+            <div class="sc-top">
+              <span class="sc-title">Inventory & Account Management</span>
+              <div class="hc-icon">📦</div>
+            </div>
+            <div class="sc-divider"></div>
+            <ul class="sc-list">
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Inventory Forecasting
+                & Restocking – No stockouts, no overstocking.
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Amazon Account Health
+                & Compliance – Avoid suspensions & violations.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Scaling & Expansion -->
+          <div class="sc-card">
+            <div class="sc-top">
+              <span class="sc-title">Scaling & Expansion</span>
+              <div class="hc-icon">🌍</div>
+            </div>
+            <div class="sc-divider"></div>
+            <ul class="sc-list">
+              <li>
+                <i class="fa-regular fa-circle-check"></i> Launching New
+                Products – Market research-backed success.
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i> International
+                Expansion – Sell beyond borders with ease.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  OUR APPROACH  -->
+    <section class="approach" id="approach">
+      <div class="container approach-inner">
+        <!-- LEFT: Two Images with Gap -->
+        <div class="approach-images">
+          <div class="image-stack">
+            <img
+              src="assets/image.png"
+              alt="Data analytics"
+              class="approach-img img-top"
+            />
+          </div>
+          <div class="image-stack">
+            <img
+              src="assets/growth.png"
+              alt="Growth strategy"
+              class="approach-img img-bottom"
+            />
+          </div>
         </div>
 
-        <!-- Col 3: Contact -->
-        <div class="footer-col">
-          <h4 class="footer-col-title">Contact</h4>
-          <!-- reuse bf-email class from booking section -->
-          <p class="bf-email" style="color:rgba(255,255,255,0.65); font-size:13px;">
-            <i class="fa-regular fa-envelope"></i> leadsbridgedemo@example.com
+        <!-- RIGHT: Content -->
+        <div class="approach-content">
+          <h2 class="approach-title">
+            Our <span class="text-gold">Approach</span>
+          </h2>
+
+          <!-- Mission Tab -->
+          <div class="ap-tab" id="apMission" onclick="switchTab('mission')">
+            <div class="ap-tab-head">
+              <span class="ap-tab-icon">🎯</span>
+              <span class="ap-tab-label">Mission</span>
+            </div>
+            <p class="ap-tab-desc" id="missionDesc" style="display: none">
+              Our mission is to empower Amazon sellers with expert PPC, SEO, and
+              growth strategies that drive real results — helping businesses
+              scale faster with less waste.
+            </p>
+          </div>
+
+          <!-- Vision Tab -->
+          <div
+            class="ap-tab ap-tab-active"
+            id="apVision"
+            onclick="switchTab('vision')"
+          >
+            <div class="ap-tab-head">
+              <span class="ap-tab-icon">🌍</span>
+              <span class="ap-tab-label">Vision</span>
+            </div>
+            <p class="ap-tab-desc" id="visionDesc">
+              Founded in 2016, FINTRIXX was created to address the challenges of
+              Amazon selling — long processes, complicated logistics, and
+              limited growth. We started with a vision to make Amazon success
+              simple, accessible, and scalable for everyone. Today, we proudly
+              serve 7+ million users, helping them grow their business with
+              ease.
+            </p>
+          </div>
+
+          <!-- CTA Button -->
+          <a href="#booking" class="btn btn-primary ap-cta"
+            >Book a Free Strategy Call</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--  HARSH REALITY  -->
+    <section class="harsh-reality" id="reality">
+      <div class="container">
+        <!-- Badge -->
+        <div class="reality-header">
+          <div class="scale-badge">
+            <span class="hero-badge-icon"
+              ><i class="fa-brands fa-amazon"></i
+            ></span>
+            <span class="scale-badge-text"
+              >Growth <span class="text-gold">Business</span></span
+            >
+          </div>
+          <h2 class="section-title center">
+            The Harsh Reality of<br />Selling on
+            <span class="text-gold">Amazon</span>
+          </h2>
+          <p class="section-sub center">
+            Selling on Amazon is tough. Do these struggles sound familiar?
+            Without the<br class="br-desk" />
+            right strategy, you're losing money, time, and opportunities.
           </p>
         </div>
 
-      </div>
+        <!-- 3x2 card grid, reuses sc-card + sc-divider pattern -->
+        <div class="reality-grid">
+          <div class="sc-card">
+            <div class="rc-title">Lost in Competition?</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc">
+              10M+ sellers & 350M+ product how do you stand out?
+            </p>
+          </div>
 
-    </div><!-- end .container -->
+          <div class="sc-card">
+            <div class="rc-title">Burning Cash on Ads?</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc">PPC feels like a money pit with no returns.</p>
+          </div>
 
-    <!-- Bottom bar â€” full-width with inner container -->
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner-wrap">
-        <span class="footer-copy">&copy; 2025 Copyright Amazon</span>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
+          <div class="sc-card">
+            <div class="rc-title">Low Rankings?</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc">Amazon's complex algorithms keep changing.</p>
+          </div>
+
+          <div class="sc-card">
+            <div class="rc-title">Inventory Headaches?</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc">Stockouts, overstocking, at the wrong time?</p>
+          </div>
+
+          <div class="sc-card">
+            <div class="rc-title">Risk of Account Suspension?</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc">
+              Amazon's strict policies make selling stressful.
+            </p>
+          </div>
+
+          <div class="sc-card">
+            <div class="rc-title">Wasting Time & Getting Stuck?</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc">Managing it all alone is overwhelming.</p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="reality-cta">
+          <a href="#booking" class="btn-brand">Talk to an Expert</a>
         </div>
       </div>
-    </div>
+    </section>
 
-  </footer>
+    <!--  HOW WE HELP -->
+    <section class="how-help" id="help">
+      <div class="container">
+        <!-- Header -->
+        <div class="reality-header">
+          <div class="scale-badge">
+            <span class="hero-badge-icon"
+              ><i class="fa-brands fa-amazon"></i
+            ></span>
+            <span class="scale-badge-text" style="color: #fff"
+              >Growth <span class="text-gold">Business</span></span
+            >
+          </div>
+          <h2 class="section-title center" style="color: #fff">
+            How We Help You<br />Win on <span class="text-gold">Amazon</span>
+          </h2>
+          <p
+            class="section-sub center"
+            style="color: rgba(255, 255, 255, 0.65)"
+          >
+            At FINTRIXX, we don’t guess—we use data-driven<br class="br-desk" />
+            strategies to scale your business.
+          </p>
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <!-- 3x2 dark cards  reuses sc-divider, rc-title, rc-desc -->
+        <div class="help-grid">
+          <div class="help-dark-card">
+            <div class="rc-title">We Make You Stand Out</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc" style="color: rgba(255, 255, 255, 0.75)">
+              Targeted marketing to reach the right buyers.
+            </p>
+          </div>
+
+          <div class="help-dark-card">
+            <div class="rc-title">We Fix Your Rankings</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc" style="color: rgba(255, 255, 255, 0.75)">
+              SEO, keywords & ads for visibility.
+            </p>
+          </div>
+
+          <div class="help-dark-card">
+            <div class="rc-title">We Optimize Your Ads</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc" style="color: rgba(255, 255, 255, 0.75)">
+              No wasted budget—only high ROI advertising.
+            </p>
+          </div>
+
+          <div class="help-dark-card">
+            <div class="rc-title">We Manage Your Inventory</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc" style="color: rgba(255, 255, 255, 0.75)">
+              So you never run out of stock or overstock.
+            </p>
+          </div>
+
+          <div class="help-dark-card">
+            <div class="rc-title">We Keep Your Account Safe</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc" style="color: rgba(255, 255, 255, 0.75)">
+              Avoid suspensions, policy violations & account risks.
+            </p>
+          </div>
+
+          <div class="help-dark-card">
+            <div class="rc-title">We Scale Your Business</div>
+            <div class="sc-divider"></div>
+            <p class="rc-desc" style="color: rgba(255, 255, 255, 0.75)">
+              Expansion, market entry & growth.
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="reality-cta">
+          <a href="#booking" class="btn-brand-light">Talk to an Expert</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING / CALENDAR -->
+    <section class="booking" id="booking">
+      <div class="container">
+        <!-- Top header above the box -->
+        <div class="booking-top-header">
+          <div
+            class="scale-badge"
+            style="justify-content: center; margin-bottom: 12px"
+          >
+            <span class="hero-badge-icon"
+              ><i class="fa-brands fa-amazon"></i
+            ></span>
+            <span class="scale-badge-text"
+              >Contact <span class="text-gold">Us</span></span
+            >
+          </div>
+          <h2 class="booking-main-title">
+            Let's Scale Your <span class="text-gold">Business!</span>
+          </h2>
+          <p class="booking-main-sub">FINTRIXX – Your Amazon Growth Partner</p>
+        </div>
+
+        <!-- Blue-dashed outer box -->
+        <div class="booking-box">
+          <!-- LEFT: info panel -->
+          <div class="booking-left">
+            <p class="bf-name">Naim</p>
+            <h3 class="bf-head">
+              Book Your Strategy <br />
+              Session: Accelerate Your <br />
+              Growth!
+            </h3>
+            <div class="bf-meta">
+              <i class="fa-regular fa-clock bf-meta-icon"></i>
+              <span class="bf-meta-item">30 min</span>
+            </div>
+            <div class="bf-meta">
+              <i class="fa-regular fa-desktop bf-meta-icon"></i>
+              <span class="bf-meta-item"
+                >Web conferencing details provided upon confirmation.</span
+              >
+            </div>
+            <div class="booking-cookie">
+              <a href="#">Cookie settings</a>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="booking-divider"></div>
+
+          <!-- RIGHT: calendar -->
+          <div class="booking-right">
+            <!-- Powered by Calendly ribbon -->
+            <div class="calendly-ribbon"></div>
+
+            <p class="cal-select-label">Select a Date &amp; Time</p>
+            <div class="cal-nav">
+              <button class="cal-prev" id="calPrev">&#8249;</button>
+              <span class="cal-month" id="calMonth"></span>
+              <button class="cal-next" id="calNext">&#8250;</button>
+            </div>
+            <div class="cal-day-names">
+              <span>MON</span><span>TUE</span><span>WED</span><span>THU</span
+              ><span>FRI</span><span>SAT</span><span>SUN</span>
+            </div>
+            <div class="cal-dates" id="calDates"></div>
+
+            <div class="cal-timezone">
+              <span class="tz-label"
+                ><i class="fa-solid fa-earth-americas"></i> Time zone</span
+              >
+              <select class="tz-select">
+                <option>Asia/Dhaka (3:00pm)</option>
+                <option>America/New_York (UTC-5)</option>
+                <option>Europe/London (UTC+0)</option>
+                <option>Asia/Tokyo (UTC+9)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Bottom footer row spans full card width -->
+          <div class="booking-footer-row">
+            <span class="bf-email"
+              ><i class="fa-regular fa-envelope"></i>
+              leadsbridgesdemo@example.com</span
+            >
+            <span class="bf-note"
+              ><span class="text-gold">Note:</span> Have a question? Need a
+              strategy? We're here to help.</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <!-- Blue-dashed footer box , reuses same dashed border style -->
+        <div class="footer-box container">
+          <!-- Col 1: Logo + description -->
+          <div class="footer-brand">
+            <!-- reuse hero-badge-icon for the atom logo -->
+            <svg
+              class="logo-svg footer-logo-svg"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse
+                cx="20"
+                cy="20"
+                rx="18"
+                ry="7"
+                stroke="#ffa500"
+                stroke-width="2.2"
+                fill="none"
+              />
+              <ellipse
+                cx="20"
+                cy="20"
+                rx="18"
+                ry="7"
+                stroke="#ffa500"
+                stroke-width="2.2"
+                fill="none"
+                transform="rotate(60 20 20)"
+              />
+              <ellipse
+                cx="20"
+                cy="20"
+                rx="18"
+                ry="7"
+                stroke="#ffa500"
+                stroke-width="2.2"
+                fill="none"
+                transform="rotate(120 20 20)"
+              />
+              <circle cx="20" cy="20" r="3" fill="#ffa500" />
+            </svg>
+            <p class="footer-desc">
+              FINTRIXX – Your Amazon Growth Partner Since 2016, we boost Amazon
+              success with expert SEO, PPC, and growth strategies.
+            </p>
+          </div>
+
+          <!-- Col 2: Home nav links -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Home</h4>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Why Choose Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Contact -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Contact</h4>
+            <!-- reuse bf-email class from booking section -->
+            <p
+              class="bf-email"
+              style="color: rgba(255, 255, 255, 0.65); font-size: 13px"
+            >
+              <i class="fa-regular fa-envelope"></i> leadsbridgedemo@example.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end .container -->
+
+      <!-- Bottom bar , full-width with inner container -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner-wrap">
+          <span class="footer-copy">&copy; 2025 Copyright Amazon</span>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

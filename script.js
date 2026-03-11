@@ -1,4 +1,4 @@
-﻿// =====================================================
+// =====================================================
 // FINTRIXX â€“ JavaScript Interactions
 // =====================================================
 
@@ -35,16 +35,21 @@ navLinks.querySelectorAll('a').forEach(a => {
 });
 
 // ---- Approach Tabs ----
-const tabBtns = document.querySelectorAll('.tab-btn');
-tabBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    tabBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
-    const tab = btn.getAttribute('data-tab');
-    document.getElementById(tab + 'Tab').classList.remove('hidden');
-  });
-});
+function switchTab(tab) {
+  // Reset both tabs
+  document.getElementById('apMission').classList.remove('ap-tab-active');
+  document.getElementById('apVision').classList.remove('ap-tab-active');
+  document.getElementById('missionDesc').style.display = 'none';
+  document.getElementById('visionDesc').style.display   = 'none';
+  // Activate chosen tab
+  if (tab === 'mission') {
+    document.getElementById('apMission').classList.add('ap-tab-active');
+    document.getElementById('missionDesc').style.display = 'block';
+  } else {
+    document.getElementById('apVision').classList.add('ap-tab-active');
+    document.getElementById('visionDesc').style.display  = 'block';
+  }
+}
 
 // ---- Calendar ----
 const monthNames = [
